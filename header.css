@@ -1,0 +1,168 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    height: 57px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(230, 230, 230);
+}
+.left-section {
+    display: flex;
+    align-items: center;   
+}
+.hamburger-menu {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    align-items: center;
+}
+.youtube-logo {
+    height: 20px;
+    object-fit: cover; 
+}
+.middle-section {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;  
+}
+.search-bar {
+    flex: 1;
+    height: 36.5px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(192,192,192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    width: 0;
+}
+.search-bar::placeholder {
+    font-size: 16px;
+    padding-left: 10px;
+}
+.search-icon {
+    height: 25px;
+    
+}
+.search-button {
+    height: 40px;
+    width: 60px;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(192, 192, 192);
+    margin-left: -1px;
+    margin-right: 10px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    cursor: pointer;
+    
+}
+
+.search-button,
+.voice-search-button,
+.create-icon-container,
+.notification-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.notification-section .tooltip 
+{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 5.5px 8px 5.5px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -32px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.notification-section:hover .tooltip
+{
+    opacity: 1;
+}
+.voice-search-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(248, 245, 245);
+    cursor: pointer;
+}
+
+.voice-icon {
+    height: 24px;
+    
+}
+.right-section {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    align-items: center;
+    flex-shrink: 0;
+}
+.create-button {
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(52, 51, 51);
+}
+.plus {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    padding-left: 5px;
+}
+.notification-section {
+    position: relative;
+}
+.notifications {
+    width: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.notifications-count {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    background-color: rgb(191, 20, 20);
+    color: white;
+    font-size: 10.5px;
+    padding: 3px 4px 3px 4px;
+    border-radius: 30px;
+}
+.mychannel {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 24px;
+    cursor: pointer;
+    
+}

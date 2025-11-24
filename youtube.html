@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Youtube Clone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="sidebar.css">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="videos.css">
+    </head>
+        <body>
+    <header class="header">
+        <div class="left-section">
+            <img class="hamburger-menu" src="icons/hamburger-menu (1).svg" alt="">
+            <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
+        </div>
+        <div class="middle-section">
+            <input type="text" placeholder="Search" class="search-bar">
+            <button class="search-button">
+                <img class="search-icon" src="icons/search.svg" alt="">
+                <div class="tooltip">
+                    Search
+                </div>
+            </button>    
+            <button class="voice-search-button">
+                <img class="voice-icon" src="icons/voice-search-icon.svg" alt="">
+                <div class="tooltip">
+                    Search with voice
+                </div>
+            </button>
+        </div>
+        <div class="right-section">
+            <button class="create-button">
+                <img class="plus" src="icons/plus.png" alt="">  Create
+            </button> 
+                <div class="notification-section">
+                    <div class="notifications">
+                        <img src="icons/notifications.svg" alt="">
+                    </div>
+                    <div class="notifications-count">
+                        9+
+                    </div>
+                    <div class="tooltip">
+                        Notifications
+                    </div>
+                </div>
+            <img class="mychannel" src="icons/mychannel_profile.jpg" alt="">
+        </div>
+    </header>
+
+    <nav class="left-sidebar">
+        <div class="scrollbox">
+            <div class="sidebar-link">
+                <div>
+                    <img class="home-icon" src="icons/icons8-home-512.png" alt="">
+                </div>
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <div>
+                    <img src="icons/shorts.png" alt="">
+                </div>
+                <div>Shorts</div>
+            </div>
+            <div class="sidebar-link">
+                <div>
+                    <img src="icons/subscribe1.png" alt="">
+                </div>
+                <div>Subscriptions</div>
+            </div>
+            <hr id="disappear">
+            <div class="you" id="disappear">
+                You
+                <div>
+                    <img class="next-arrow" src="icons/next.png" alt="">
+                </div>
+            </div>
+            
+
+            <!--<div class="sidebar-link">
+                <div>
+                    <img src="icons/explore.svg" alt="">
+                </div>
+                <div>Explore</div>
+            </div>-->
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/history (2).png" alt="">
+                </div>
+                <div>History</div>
+            </div>
+            <!--<div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/youtube (1).png" alt="">
+                </div>
+                <div>Your Videos</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/library.svg" alt="">
+                </div>
+                <div>Library</div>
+            </div>-->
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/playlist2.png" alt="">
+                </div>
+                <div>Playlist</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/clock2.png" alt="">
+                </div>
+                <div>Watch Later</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/like.png" alt="">
+                </div>
+                <div>Liked Videos</div>
+            </div>
+            
+            <hr id="disappear">
+            <div class="subscribe-section" id="disappear">
+                Subscriptions
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img class="subscribed-profile" src="icons/channel-7.jpeg" alt="">
+                </div>
+                <div>FIFA</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/list.png" alt="">
+                </div>
+                <div>All Subscriptions</div>
+            </div>
+            <hr id="disappear">
+            <div class="explore" id="disappear">
+                Explore
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/trending2.png" alt="">
+                </div>
+                <div>Trending</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/bag.png" alt="">
+                </div>
+                <div>Shopping</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/musical-note.png" alt="">
+                </div>
+                <div>Music</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/clapperboard.png" alt="">
+                </div>
+                <div>Films</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/live.png" alt="">
+                </div>
+                <div>Live</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/console2.png" alt="">
+                </div>
+                <div>Gaming</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/news2.png" alt="">
+                </div>
+                <div>News</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/trophy.png" alt="">
+                </div>
+                <div>Sports</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/learning.png" alt="">
+                </div>
+                <div>Courses</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/fashion.png" alt="">
+                </div>
+                <div>Fashion and Beauty</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/podcast-.png" alt="">
+                </div>
+                <div>Podcasts</div>
+            </div>
+            <hr id="disappear">
+            <div class="more" id="disappear">
+                More from Youtube
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/youtube (2).png" alt="">
+                </div>
+                <div>Youtube Premium</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/youtube-music.png" alt="">
+                </div>
+                <div>Youtube Music</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/youtube-kids.png" alt="">
+                </div>
+                <div>Youtube Kids</div>
+            </div>
+            <hr id="disappear">
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/setting.png" alt="">
+                </div>
+                <div>Settings</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/red-flag.png" alt="">
+                </div>
+                <div>Report History</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/question.png" alt="">
+                </div>
+                <div>Help</div>
+            </div>
+            <div class="sidebar-link" id="disappear">
+                <div>
+                    <img src="icons/feedback (1).png" alt="">
+                </div>
+                <div>Send Feedback</div>
+            </div>
+            <hr id="disappear">
+            <div class="about-section" id="disappear">
+                <span class="a1">About</span>
+                <span class="a1">Press</span>
+                <span class="a1">Copyright</span>
+                <span class="a1">Contact us</span>
+                <span class="a1">Creator</span>
+                <span class="a1">Advertise</span>
+                <span class="a1">Developers</span>
+                
+            </div>
+            <div class="about-section" id="disappear">
+                <span class="a1">Terms</span>
+                <span class="a1">Privacy Policy & Safety</span>
+                <span class="a1">How Youtube Works</span>
+                <br>
+                <span class="a1">Test new Features</span>
+                <br>
+
+                <div class="copyright-section" id="disappear">
+                    <img class="copyright" src="icons/copyright.png" alt="">2025 Google LLC
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="video-grid">
+            <div class="video-card">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/n2RNcPRtAiY" target="_blank">
+                        <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="">
+                        <div class="video-time">
+                            14:20
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-profile">
+                        <a class="video-link" href="https://www.youtube.com/@mkbhd" target="_blank">
+                            <img class="profile-picture" src="icons/channel-1.jpeg" alt="">
+                        </a>    
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a class="video-link" href="https://youtu.be/n2RNcPRtAiY" target="_blank">
+                            Talking Tech and AI with Google CEO sundar Pichai!
+                            </a>
+                        </p>
+                        <p class="video-author">
+                            <a class="channel-link" href="https://www.youtube.com/@mkbhd" target="_blank">
+                            Marques Brownlee
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            3.4M views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div> 
+
+        <div class="video-card">
+            <div class="thumbnail-row">
+                <a class="video-link" href="https://youtu.be/QrzuWRpazw4" target="_blank">
+                    <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="">
+                    <div class="video-time">18:33</div>
+                </a>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <a class="ch" href="https://www.youtube.com/@talkfootballhd" target="_blank">
+                        <img class="profile-picture" src="icons/channels2_profile.jpg" alt="">
+                    </a>
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        <a class="video-link" href="https://youtu.be/QrzuWRpazw4" target="_blank">
+                            Barcelona Robbed? Inter Milan into UCL Final!
+                        </a>
+                    </p>       
+                    <p class="video-author">
+                        <a class="channel-link" href="https://www.youtube.com/@talkfootballhd" target="_blank">
+                            Talk Football HD
+                        </a>
+                    </p>
+                    <p class="video-stats">
+                        192k views &#183; 3 weeks ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="thumbnail-row">
+                <a class="video-link" href="https://youtu.be/FgjPQQeTh1w" target="_blank">
+                    <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="">
+                    <div class="video-time">9:33</div>
+                </a>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <a class="channel-link" href="https://www.youtube.com/@SSSniperWolf" target="_blank">
+                        <img class="profile-picture" src="icons/channel-3.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        <a class="video-link" href="https://youtu.be/FgjPQQeTh1w" target="_blank">
+                            Crazy TikToks Taken Moments Before DISASTER!
+                        </a>
+                    </p>
+                    <p class="video-author">
+                        <a class="channel-link" href="https://www.youtube.com/@SSSniperWolf" target="_blank">
+                            SSSniperWolf
+                        </a>
+                    </p>
+                    <p class="video-stats">
+                        12M views &#183; 1 year ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="thumbnail-row">
+                <a class="video-link" href="https://youtu.be/bfnCOTgrl9g" target="_blank">
+                    <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="">
+                    <div class="video-time">14:20</div>
+                </a>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <a class="channel-link" href="https://www.youtube.com/@UEFA" target="_blank">
+                        <img class="profile-picture" src="icons/channel4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        <a class="video-link" href="https://youtu.be/bfnCOTgrl9g" target="_blank">
+                            Juventus 1-3 Barcelona #UCL 2015 Final Flashback
+                        </a>
+                    </p>
+                    <p class="video-author">
+                        <a class="channel-link" href="https://www.youtube.com/@UEFA" target="_blank">
+                            UEFA
+                        </a>
+                    </p>
+                    <p class="video-stats">
+                        4.5M views &#183; 6 years ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="thumbnail-row">
+                <a class="video-link" href="https://youtu.be/zhEWqfP6V_w" target="_blank">
+                    <img class="thumbnail" src="thumbnails/thumbnail-16.webp" alt="">
+                    <div class="video-time">5:23</div>
+                </a>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <a class="channel-link" href="https://www.youtube.com/@fifa" target="_blank">
+                        <img class="profile-picture" src="icons/channels13_profile.jpg" alt="">
+                    </a>
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        <a class="video-link" href="https://youtu.be/zhEWqfP6V_w" target="_blank">
+                            The Greatest Final Ever! | Argentina vs France | FIFA World Cup Qatar 2022 Highlights
+                        </a>
+                    </p>
+                    <p class="video-author">
+                        <a class="channel-link" href="https://www.youtube.com/@fifa" target="_blank">
+                            FIFA
+                        </a>
+                    </p>
+                    <p class="video-stats">
+                        28M views &#183; 2 years ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="thumbnail-row">
+                <a class="video-link" href="https://youtu.be/cdU4mAkTel4" target="_blank">
+                    <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="">
+                    <div class="video-time">17:25</div>
+                </a>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <a class="channel-link" href="https://www.youtube.com/@Markaroni" target="_blank">
+                        <img class="profile-picture" src="icons/channels5_profile.jpg" alt="">
+                    </a>
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        <a class="video-link" href="https://youtu.be/cdU4mAkTel4" target="_blank">
+                            Barcelona "Owned" Real Madrid This Season!!!
+                        </a>
+                    </p>
+                    <p class="video-author">
+                        <a  class="channel-link" href="https://www.youtube.com/@Markaroni" target="_blank">
+                            Markaroni
+                        </a>
+                    </p>
+                    <p class="video-stats">
+                        145k views &#183; 2 weeks ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="thumbnail-row">
+                <a class="video-link" href="https://youtu.be/Qp14B_jj-Tk" target="_blank">
+                    <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="">
+                    <div class="video-time">16:15</div>
+                </a>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <a class="channel-link" href="https://www.youtube.com/@imparkerburton" target="_blank">
+                        <img class="profile-picture" src="icons/channels6_profile.jpg" alt="">
+                    </a>
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        <a class="video-link" href="https://youtu.be/Qp14B_jj-Tk" target="_blank">
+                            How to Customize Your Samsung Phone With Home UP!
+                        </a>
+                    </p>
+                    <p class="video-author">
+                        <a class="channel-link" href="https://www.youtube.com/@imparkerburton" target="_blank">
+                            Parker Burton
+                        </a> 
+                    </p>
+                    <p class="video-stats">
+                        184k views &#183; 2 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="thumbnail-row">
+                <a class="video-link" href="https://youtu.be/-Shb2iaJu18" target="_blank">
+                    <img class="thumbnail" src="thumbnails/thumbnail-14.webp" alt="">
+                    <div class="video-time">8:22</div>
+                </a>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <a class="channel-link" href="https://www.youtube.com/@SonyLIV" target="_blank">
+                        <img class="profile-picture" src="icons/channels14A_profile.jpg" alt="">
+                    </a>
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        <a class="video-link" href="https://youtu.be/-Shb2iaJu18" target="_blank">
+                            PSG vs INTER | FINAL | Key Moments | UEFA Champions League 2024-25
+                        </a> 
+                    </p>
+                    <p class="video-author">
+                        <a class="channel-link" href="https://www.youtube.com/@SonyLIV" target="_blank">
+                            Sony LIV
+                        </a>
+                    </p>
+                    <p class="video-stats">
+                        478k views &#183; 4 days ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="thumbnail-row">
+                <a class="video-link" href="https://www.youtube.com/watch?v=fNVa1qMbF9Y" target="_blank">
+                    <img class="thumbnail" src="thumbnails/thumbnail-7.webp" alt="">
+                    <div class="video-time">10:13</div>
+                </a>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <a class="channel-link" href="https://www.youtube.com/@RealLifeLore" target="_blank">
+                        <img class="profile-picture" src="icons/channel-7.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        <a class="video-link" href="https://www.youtube.com/watch?v=fNVa1qMbF9Y" target="_blank">
+                            why Planes Don't Fly Over Tibet?
+                        </a>
+                    </p>
+                    <p class="video-author">
+                        <a class="channel-link" href="" target="_blank">
+                            RealLifeLore
+                        </a>
+                    </p>
+                    <p class="video-stats">
+                        6.6M views &#183; 1 year ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="thumbnail-row">
+                <a class="video-link" href="https://youtu.be/lFm4EM1juls" target="_blank">
+                    <img class="thumbnail" src="thumbnails/thumbnail-8.webp" alt="">
+                    <div class="video-time">7:12</div>
+                </a>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <a class="channel-link" href="https://www.youtube.com/@adin" target="_blank">
+                        <img class="profile-picture" src="icons/channel-8.jpeg" alt="">
+                    </a>    
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        <a class="video-link" href="https://youtu.be/lFm4EM1juls" target="_blank">
+                            Inside The World's Biggest Passenger Airplane!
+                        </a>
+                    </p>
+                    <p class="video-author">
+                        <a class="channel-link" href="https://www.youtube.com/@adin" target="_blank">
+                            Tech Vision
+                        </a>
+                    </p>
+                    <p class="video-stats">
+                        3.7M views &#183; 10 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=xtSu7662jOQ&pp=ygUDbWxz" target="_blank">
+                    <img class="thumbnail" src="thumbnails/thumbnail-9.webp" alt="">
+                    <div class="video-time">7:20</div>
+                </a>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <a class="channel-link" href="http://www.youtube.com/@mls" target="_blank">
+                        <img class="profile-picture" src="icons/channels9_profile.jpg" alt="">
+                    </a>
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        <a class="video-link" href="https://www.youtube.com/watch?v=xtSu7662jOQ&pp=ygUDbWxz" target="_blank">
+                            Inter Miami CF vs CF Montreal | Full Match Highlights
+                        </a>
+                    </p>
+                    <p class="video-author">
+                        <a class="channel-link" href="" target="_blank">
+                            Major League Soccer
+                        </a>
+                    </p>
+                    <p class="video-stats">
+                        274k views &#183; 3 hours ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="thumbnail-row">
+                <a class="video-link" href="https://www.youtube.com/watch?v=ZmKy_fnRM_E" target="_blank">
+                    <img class="thumbnail" src="thumbnails/thumbnail-15.webp" alt="">
+                    <div class="video-time">16:30</div>
+                </a>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <a class="channel-link" href="http://www.youtube.com/@magical_messi" target="_blank">
+                        <img class="profile-picture" src="icons/channel-15.jpg" alt="">
+                    </a>
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        <a class="video-link" href="https://www.youtube.com/watch?v=ZmKy_fnRM_E" target="_blank">
+                            Lionel Messi | World Champion | Movie
+                        </a>
+                    </p>
+                    <p class="video-author">
+                        <a class="channel-link" href="http://www.youtube.com/@magical_messi" target="_blank">
+                            MagicalMessi
+                        </a>
+                    </p>
+                    <p class="video-stats">
+                        12M views &#183; 2 years ago
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> 
+</main>
+</body>
+</html>

@@ -1,0 +1,110 @@
+.left-sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 57px;
+    width: 72px;
+    background-color: white;
+    z-index: 200;
+    padding-top: 5px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.sidebar-link {
+    height: 73px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.sidebar-link:hover {
+    background-color: rgb(237, 235, 235);
+    border-radius: 4px;
+    
+}
+
+
+.sidebar-link img,
+.list-icon {
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.sidebar-link div {
+    font-size: 10px;
+}
+
+.you,
+.subscribe-section,
+.explore,
+.more {
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 24px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    display: flex;
+}
+.next-arrow {
+    width: 20px;
+    margin-left: 5px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(215, 213, 213);
+    border-radius: 2px;
+    height: 20px;
+}
+
+.scrollbar {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.subscribed {
+    display: flex;
+    align-items: center;
+    
+    margin-left: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.channel-name {
+    margin-left: 15px;
+    font-size: 15px;
+}
+.profile-picture-2 {
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.subscribed-profile {
+    border-radius: 50%;
+}
+.about-section {
+    color: gray;
+    font-size: 13px;
+    padding: 5px 24px 10px;
+    line-height: 17px;
+    width: 190px;
+    cursor: pointer;
+}
+.a1 {
+    margin-right: 5px;
+}
+.copyright {
+    width: 10px;
+    margin-right: 5px;
+}
+.copyright-section {
+    margin-top: 15px;
+    cursor: pointer;
+}
